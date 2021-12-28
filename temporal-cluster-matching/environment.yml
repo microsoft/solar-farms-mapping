@@ -1,0 +1,22 @@
+name: tcm
+dependencies:
+  - python>=3.5
+  - pip
+  - rtree
+  - shapely>=1.7
+  - fiona>=1.8
+  - rasterio>=1.1.0
+  - pyproj
+  - gdal>=3.0
+  - numpy
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - scikit-image
+  - pandas
+  - pip:
+    - utm
+    - pigeon-jupyter==0.1.0
+    - planetary-computer>=0.3.0rc3
+    - pygifsicle
+    - imageio

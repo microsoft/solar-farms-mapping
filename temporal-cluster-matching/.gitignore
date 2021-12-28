@@ -1,0 +1,9 @@
+.vscode
+.ipynb_checkpoints
+__pycache__
+
+data/tmp/
+output/
+
+data/Delmarva_PL_House_Final2_epsg26918.geojson
+data/Delmarva_PL_House_Final2_epsg4326.geojson
