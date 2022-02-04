@@ -9,12 +9,13 @@ The majority of recent studies use either predictions of resource suitability or
 </figure>
 
 
-If you make use of this implementation or dataset in your own project or want to refer to it in a scientific publication, **please consider referencing this GitHub repository and citing our [paper]()**:
+If you make use of this implementation or dataset in your own project or want to refer to it in a scientific publication, **please consider referencing this GitHub repository and citing our [paper](https://arxiv.org/abs/2202.01340)**:
 ```
-@inproceedings{ortizSolar2021,
-  author  = {Anthony Ortiz and Dhaval Negandhi and Sagar R Mysorekar and Shivaprakash K Nagaraju and Joseph Kiesecker  and Caleb Robinson and Aditi Khurana and Felipe Oviedo and Juan M. Lavista Ferres},
+@article{ortiz2022Solar,
   title   = {An Artificial Intelligence Dataset for Solar Energy Locations in India},
-  year    = {2021},
+  author  = {Anthony Ortiz and Dhaval Negandhi and Sagar R Mysorekar and Shivaprakash K Nagaraju and Joseph Kiesecker  and Caleb Robinson and Aditi Khurana and Felipe Oviedo and Juan M. Lavista Ferres},
+  journal = {arXiv preprint arXiv:2202.01340},
+  year    = {2022},
 }
 ```
 
@@ -113,6 +114,15 @@ Note: Make sure to intall a version of cudatoolkit supported by your NVCC versio
 
 # Training and doing inference
 
+## Download Solar Farms Pretrained Model
+
+You can download a pretrained solar farm model in the following link:
+
+* [Solar Farm Model](https://researchlabwuopendata.blob.core.windows.net/solar-farms/checkpoint.pth.tar)
+
+Note: Before running the example notebooks place the ``checkpoint.pth.tar`` file in the following directory:
+``data/models/unet_hnm/``
+
 ## Training Solar Farm Segmentation Model
 
 To train the network with default values and see training output on the command line run:
@@ -121,7 +131,7 @@ To train the network with default values and see training output on the command 
 
 Note: For training customized model check options available in the options directory
 
-### Inference
+## Inference
 Use the "tile_inference.py" script to do inference on image tiles. "inference_large_scale.py" lets you do inference for a list of tiles. Explore the demos uner the notebooks directory for inference examples.
 
 # Demo Notebooks
